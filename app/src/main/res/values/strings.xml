@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Labyrinth</string>
+    <string name="size">размер</string>
+    <string name="key">ключ</string>
+    <string name="start">Играть</string>
+    <string name="forget_minimap">Забывать маршрут</string>
+    <string name="show_way">Отображать маршрут</string>
+    <string name="all_map_open">Вся карта открыта</string>
+    <string name="mark_supplies_and_exit">Отметить припасы и выход</string>
+    <string name="move_limit">Ограничить ходы</string>
+    <string name="history">история</string>
+    <string name="inventory">инвентарь</string>
+    <string name="back">назад</string>
+    <string name="no_chosen">Не выбрано</string>
+    <string name="delete">удалить</string>
+    <string name="copy">копировать</string>
+    <string name="name_for_saving">Имя для сохранения</string>
+</resources>

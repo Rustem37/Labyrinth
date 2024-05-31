@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etSize"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/etSeed"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center_horizontal"
+        android:hint="@string/size"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#546E7A" />
+
+    <EditText
+        android:id="@+id/etSeed"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center_horizontal"
+        android:hint="@string/key"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#546E7A" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:onClick="start"
+        android:text="@string/start"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        tools:ignore="RelativeOverlap">
+
+        <CheckBox
+            android:id="@+id/cbForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_minimap" />
+
+        <CheckBox
+            android:id="@+id/cbWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_way" />
+
+        <CheckBox
+            android:id="@+id/cbMapUnlocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_map_open" />
+
+        <CheckBox
+            android:id="@+id/cbImportantPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_supplies_and_exit" />
+
+        <CheckBox
+            android:id="@+id/cbMoveLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/move_limit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp">
+
+        <ImageButton
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/history"
+            android:onClick="openHistory"
+            android:scaleType="fitCenter"
+            android:src="@drawable/history" />
+    </LinearLayout>
+</RelativeLayout>
